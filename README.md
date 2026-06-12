@@ -10,7 +10,7 @@
 
 This project implements a velocity-level inverse kinematics controller for a compliant triangular truss robot operating under a constant perimeter (isoperimetric) constraint. A single node is commanded to a 2D Cartesian setpoint while the remaining nodes deform freely, preserving total edge length throughout motion.
 
-The controller is grounded in differential kinematics — the same Jacobian-based framework used in serial manipulator IK — adapted here for a variable-geometry compliant structure whose Jacobian updates every timestep as the triangle deforms. Constraint drift, the fundamental failure mode of velocity-level integration, is suppressed using Baumgarte stabilization rather than post-hoc geometric correction.
+The controller is grounded in differential kinematics, the same Jacobian-based framework used in serial manipulator IK, adapted here for a variable-geometry compliant structure whose Jacobian updates every timestep as the triangle deforms. Constraint drift, the fundamental failure mode of velocity-level integration, is suppressed using Baumgarte stabilization rather than post-hoc geometric correction.
 
 ---
 
